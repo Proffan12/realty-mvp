@@ -8,7 +8,7 @@
     "rooms": 2,
     "area": 54,
     "market_diff": -8.5,
-    "photos": ["./assets/images/flat1.jpg"]
+    "photos": ["https://via.placeholder.com/400x300/4A90E2/FFFFFF?text=Квартира+1"]
   },
   {
     "id": 2,
@@ -19,6 +19,50 @@
     "rooms": 1,
     "area": 35,
     "market_diff": 3.2,
-    "photos": ["./assets/images/flat2.jpg"]
+    "photos": ["https://via.placeholder.com/400x300/50E3C2/FFFFFF?text=Квартира+2"]
+  },
+  {
+    "id": 3,
+    "title": "3-к квартира, 78 м²",
+    "address": "пр. Мира, 42",
+    "district": "Северный",
+    "price": 6200000,
+    "rooms": 3,
+    "area": 78,
+    "market_diff": -12.3,
+    "photos": ["https://via.placeholder.com/400x300/B8E986/FFFFFF?text=Квартира+3"]
+  },
+  {
+    "id": 4,
+    "title": "Студия, 28 м²",
+    "address": "ул. Садовая, 5",
+    "district": "Центр",
+    "price": 3800000,
+    "rooms": 0,
+    "area": 28,
+    "market_diff": 7.8,
+    "photos": ["https://via.placeholder.com/400x300/F5A623/FFFFFF?text=Квартира+4"]
+  },
+  {
+    "id": 5,
+    "title": "2-к квартира, 62 м²",
+    "address": "ул. Зеленая, 24",
+    "district": "Западный",
+    "price": 5200000,
+    "rooms": 2,
+    "area": 62,
+    "market_diff": -3.5,
+    "photos": ["https://via.placeholder.com/400x300/BD10E0/FFFFFF?text=Квартира+5"]
+  },
+  {
+    "id": 6,
+    "title": "4-к квартира, 105 м²",
+    "address": "пр. Победы, 18",
+    "district": "Восточный",
+    "price": 8900000,
+    "rooms": 4,
+    "area": 105,
+    "market_diff": 15.2,
+    "photos": ["https://via.placeholder.com/400x300/9013FE/FFFFFF?text=Квартира+6"]
   }
 ]
