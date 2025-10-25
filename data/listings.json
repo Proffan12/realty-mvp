@@ -8,6 +8,7 @@
     "rooms": 2,
     "area": 54,
     "market_diff": -8.5,
+    "type": "apartment",
     "photos": ["https://via.placeholder.com/400x300/4A90E2/FFFFFF?text=Квартира+1"]
   },
   {
@@ -19,6 +20,7 @@
     "rooms": 1,
     "area": 35,
     "market_diff": 3.2,
+    "type": "apartment",
     "photos": ["https://via.placeholder.com/400x300/50E3C2/FFFFFF?text=Квартира+2"]
   },
   {
@@ -30,6 +32,7 @@
     "rooms": 3,
     "area": 78,
     "market_diff": -12.3,
+    "type": "apartment",
     "photos": ["https://via.placeholder.com/400x300/B8E986/FFFFFF?text=Квартира+3"]
   },
   {
@@ -41,6 +44,7 @@
     "rooms": 0,
     "area": 28,
     "market_diff": 7.8,
+    "type": "apartment",
     "photos": ["https://via.placeholder.com/400x300/F5A623/FFFFFF?text=Квартира+4"]
   },
   {
@@ -52,6 +56,7 @@
     "rooms": 2,
     "area": 62,
     "market_diff": -3.5,
+    "type": "apartment",
     "photos": ["https://via.placeholder.com/400x300/BD10E0/FFFFFF?text=Квартира+5"]
   },
   {
@@ -63,6 +68,79 @@
     "rooms": 4,
     "area": 105,
     "market_diff": 15.2,
+    "type": "apartment",
     "photos": ["https://via.placeholder.com/400x300/9013FE/FFFFFF?text=Квартира+6"]
+  },
+  {
+    "id": 7,
+    "title": "Частный дом, 120 м²",
+    "address": "ул. Лесная, 3",
+    "district": "Пригород",
+    "price": 12500000,
+    "rooms": 5,
+    "area": 120,
+    "market_diff": -15.8,
+    "type": "house",
+    "photos": ["https://via.placeholder.com/400x300/7ED321/FFFFFF?text=Дом+1"]
+  },
+  {
+    "id": 8,
+    "title": "Таунхаус, 85 м²",
+    "address": "ул. Садовая, 42",
+    "district": "Западный",
+    "price": 7800000,
+    "rooms": 3,
+    "area": 85,
+    "market_diff": 8.7,
+    "type": "house",
+    "photos": ["https://via.placeholder.com/400x300/417505/FFFFFF?text=Дом+2"]
+  },
+  {
+    "id": 9,
+    "title": "1-к квартира в новостройке, 40 м²",
+    "address": "ул. Строителей, 15",
+    "district": "Новый район",
+    "price": 4200000,
+    "rooms": 1,
+    "area": 40,
+    "market_diff": -5.2,
+    "type": "new",
+    "photos": ["https://via.placeholder.com/400x300/BD10E0/FFFFFF?text=Новостройка+1"]
+  },
+  {
+    "id": 10,
+    "title": "3-к квартира в новостройке, 75 м²",
+    "address": "пр. Молодежный, 8",
+    "district": "Северный",
+    "price": 6800000,
+    "rooms": 3,
+    "area": 75,
+    "market_diff": 12.1,
+    "type": "new",
+    "photos": ["https://via.placeholder.com/400x300/9013FE/FFFFFF?text=Новостройка+2"]
+  },
+  {
+    "id": 11,
+    "title": "2-к квартира, 48 м²",
+    "address": "ул. Центральная, 25",
+    "district": "Центр",
+    "price": 5100000,
+    "rooms": 2,
+    "area": 48,
+    "market_diff": -9.3,
+    "type": "apartment",
+    "photos": ["https://via.placeholder.com/400x300/4A90E2/FFFFFF?text=Квартира+7"]
+  },
+  {
+    "id": 12,
+    "title": "4-к квартира, 95 м²",
+    "address": "ул. Парковая, 12",
+    "district": "Центр",
+    "price": 8200000,
+    "rooms": 4,
+    "area": 95,
+    "market_diff": 6.4,
+    "type": "apartment",
+    "photos": ["https://via.placeholder.com/400x300/50E3C2/FFFFFF?text=Квартира+8"]
   }
 ]
