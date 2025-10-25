@@ -1,0 +1,5 @@
+body { font-family: sans-serif; padding: 20px; background: #fafafa; }
+.card { background: white; padding: 10px; margin: 10px; border-radius: 10px; box-shadow: 0 0 5px #ccc; display: inline-block; width: 200px; vertical-align: top; }
+img { width: 100%; border-radius: 10px; }
+.filters { margin-bottom: 15px; }
+.hidden { display: none; }

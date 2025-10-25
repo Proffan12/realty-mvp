@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Агрегатор недвижимости</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>Поиск недвижимости</h1>
+
+  <div class="tabs">
+    <button id="tab-standard">Обычные фильтры</button>
+    <button id="tab-ai">Фильтры с ИИ</button>
+  </div>
+
+  <div id="filters-standard" class="filters">
+    <label>Цена от: <input id="minPrice" type="number"></label>
+    <label>до: <input id="maxPrice" type="number"></label>
+    <select id="sortStandard">
+      <option value="priceAsc">По возрастанию цены</option>
+      <option value="priceDesc">По убыванию цены</option>
+    </select>
+  </div>
+
+  <div id="filters-ai" class="filters hidden">
+    <select id="sortAI">
+      <option value="marketDiffAsc">Ближе к рынку →</option>
+      <option value="marketDiffDesc">Дальше от рынка →</option>
+      <option value="undermarket">Ниже рынка</option>
+      <option value="overmarket">Выше рынка</option>
+    </select>
+  </div>
+
+  <div id="listings"></div>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>

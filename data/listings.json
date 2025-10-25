@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "2-к квартира, 54 м²",
+    "address": "ул. Гагарина, 15",
+    "district": "Центр",
+    "price": 4500000,
+    "rooms": 2,
+    "area": 54,
+    "market_diff": -8.5,
+    "photos": ["./assets/images/flat1.jpg"]
+  },
+  {
+    "id": 2,
+    "title": "1-к квартира, 35 м²",
+    "address": "ул. Ленина, 7",
+    "district": "Южный",
+    "price": 3100000,
+    "rooms": 1,
+    "area": 35,
+    "market_diff": 3.2,
+    "photos": ["./assets/images/flat2.jpg"]
+  }
+]
