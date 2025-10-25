@@ -9,7 +9,7 @@
     "area": 54,
     "market_diff": -8.5,
     "type": "apartment",
-    "photos": ["https://via.placeholder.com/400x300/4A90E2/FFFFFF?text=Квартира+1"]
+    "photos": ["https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop"]
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "area": 35,
     "market_diff": 3.2,
     "type": "apartment",
-    "photos": ["https://via.placeholder.com/400x300/50E3C2/FFFFFF?text=Квартира+2"]
+    "photos": ["https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop"]
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "area": 78,
     "market_diff": -12.3,
     "type": "apartment",
-    "photos": ["https://via.placeholder.com/400x300/B8E986/FFFFFF?text=Квартира+3"]
+    "photos": ["https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop"]
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "area": 28,
     "market_diff": 7.8,
     "type": "apartment",
-    "photos": ["https://via.placeholder.com/400x300/F5A623/FFFFFF?text=Квартира+4"]
+    "photos": ["https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=400&h=300&fit=crop"]
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "area": 62,
     "market_diff": -3.5,
     "type": "apartment",
-    "photos": ["https://via.placeholder.com/400x300/BD10E0/FFFFFF?text=Квартира+5"]
+    "photos": ["https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=400&h=300&fit=crop"]
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "area": 105,
     "market_diff": 15.2,
     "type": "apartment",
-    "photos": ["https://via.placeholder.com/400x300/9013FE/FFFFFF?text=Квартира+6"]
+    "photos": ["https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=400&h=300&fit=crop"]
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "area": 120,
     "market_diff": -15.8,
     "type": "house",
-    "photos": ["https://via.placeholder.com/400x300/7ED321/FFFFFF?text=Дом+1"]
+    "photos": ["https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=400&h=300&fit=crop"]
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "area": 85,
     "market_diff": 8.7,
     "type": "house",
-    "photos": ["https://via.placeholder.com/400x300/417505/FFFFFF?text=Дом+2"]
+    "photos": ["https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&h=300&fit=crop"]
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "area": 40,
     "market_diff": -5.2,
     "type": "new",
-    "photos": ["https://via.placeholder.com/400x300/BD10E0/FFFFFF?text=Новостройка+1"]
+    "photos": ["https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop"]
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "area": 75,
     "market_diff": 12.1,
     "type": "new",
-    "photos": ["https://via.placeholder.com/400x300/9013FE/FFFFFF?text=Новостройка+2"]
+    "photos": ["https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=300&fit=crop"]
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "area": 48,
     "market_diff": -9.3,
     "type": "apartment",
-    "photos": ["https://via.placeholder.com/400x300/4A90E2/FFFFFF?text=Квартира+7"]
+    "photos": ["https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&h=300&fit=crop"]
   },
   {
     "id": 12,
@@ -141,6 +141,6 @@
     "area": 95,
     "market_diff": 6.4,
     "type": "apartment",
-    "photos": ["https://via.placeholder.com/400x300/50E3C2/FFFFFF?text=Квартира+8"]
+    "photos": ["https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=400&h=300&fit=crop"]
   }
 ]
