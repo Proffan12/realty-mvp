@@ -183,4 +183,148 @@ function updateStatistics() {
   document.getElementById('goodDeals').textContent = goodDeals;
 }
 
-// ... остальные функции (setupRoomFilters, setupTypeFilters, setupViewMode, applyAllFilters) остаются без изменений
+// Настройка фильтров по комнатам
+function setupRoomFilters() {
+  const roomButtons = document.querySelectorAll('.room-btn');
+  roomButtons.forEach(btn => {
+    btn.addEventListener('click', function() {
+      roomButtons.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      
+      activeRoomFilter = this.getAttribute('data-rooms');
+      applyAllFilters();
+    });
+  });
+}
+
+// Настройка фильтров по типу недвижимости
+function setupTypeFilters() {
+  const typeButtons = document.querySelectorAll('.type-btn');
+  typeButtons.forEach(btn => {
+    btn.addEventListener('click', function() {
+      typeButtons.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      
+      activeTypeFilter = this.getAttribute('data-type');
+      applyAllFilters();
+    });
+  });
+}
+
+// Настройка переключения видов
+function setupViewMode() {
+  const viewButtons = document.querySelectorAll('.view-btn');
+  viewButtons.forEach(btn => {
+    btn.addEventListener('change', function() {
+      if (this.id === 'gridView' && this.checked) {
+        currentViewMode = 'grid';
+      } else if (this.id === 'listView' && this.checked) {
+        currentViewMode = 'list';
+      }
+      renderListings();
+    });
+  });
+}
+
+// Применение всех фильтров
+function applyAllFilters() {
+  filtered = [...listings];
+  
+  // Фильтрация по комнатам
+  if (activeRoomFilter !== 'all') {
+    const roomCount = parseInt(activeRoomFilter);
+    if (roomCount === 4) {
+      filtered = filtered.filter(item => item.rooms >= 4);
+    } else {
+      filtered = filtered.filter(item => item.rooms === roomCount);
+    }
+  }
+  
+  // Фильтрация по типу недвижимости
+  if (activeTypeFilter !== 'all') {
+    filtered = filtered.filter(item => item.type === activeTypeFilter);
+  }
+  
+  // Фильтрация по цене
+  const minPrice = parseInt(document.getElementById('minPrice').value);
+  const maxPrice = parseInt(document.getElementById('maxPrice').value);
+  
+  if (!isNaN(minPrice)) {
+    filtered = filtered.filter(item => item.price >= minPrice);
+  }
+  if (!isNaN(maxPrice)) {
+    filtered = filtered.filter(item => item.price <= maxPrice);
+  }
+  
+  // Фильтрация по площади
+  const minArea = parseInt(document.getElementById('minArea').value);
+  const maxArea = parseInt(document.getElementById('maxArea').value);
+  
+  if (!isNaN(minArea)) {
+    filtered = filtered.filter(item => item.area >= minArea);
+  }
+  if (!isNaN(maxArea)) {
+    filtered = filtered.filter(item => item.area <= maxArea);
+  }
+  
+  renderListings();
+}
+
+// Стандартная сортировка
+document.getElementById('sortStandard').addEventListener('change', e => {
+  if (e.target.value === 'default') return;
+  
+  if (e.target.value === 'priceAsc') filtered.sort((a,b) => a.price - b.price);
+  if (e.target.value === 'priceDesc') filtered.sort((a,b) => b.price - a.price);
+  if (e.target.value === 'areaAsc') filtered.sort((a,b) => a.area - b.area);
+  if (e.target.value === 'areaDesc') filtered.sort((a,b) => b.area - a.area);
+  
+  renderListings();
+});
+
+// AI сортировка
+document.getElementById('sortAI').addEventListener('change', e => {
+  if (e.target.value === 'marketDiffAsc') 
+    filtered.sort((a,b) => Math.abs(a.market_diff) - Math.abs(b.market_diff));
+  if (e.target.value === 'marketDiffDesc') 
+    filtered.sort((a,b) => Math.abs(b.market_diff) - Math.abs(a.market_diff));
+  if (e.target.value === 'undermarketAsc') 
+    filtered.sort((a,b) => a.market_diff - b.market_diff);
+  if (e.target.value === 'undermarketDesc') 
+    filtered.sort((a,b) => b.market_diff - a.market_diff);
+  
+  renderListings();
+});
+
+// Фильтрация по отклонению от рынка
+document.getElementById('marketFilter').addEventListener('change', e => {
+  if (e.target.value === 'all') filtered = [...listings];
+  if (e.target.value === 'undermarket') filtered = listings.filter(a => a.market_diff < -5);
+  if (e.target.value === 'overmarket') filtered = listings.filter(a => a.market_diff > 5);
+  if (e.target.value === 'market') filtered = listings.filter(a => Math.abs(a.market_diff) <= 5);
+  
+  // Применяем также фильтры по комнатам, цене и площади
+  applyAllFilters();
+});
+
+// Обработчики для кнопок применения фильтров
+document.getElementById('applyFilters').addEventListener('click', applyAllFilters);
+document.getElementById('applyAIFilters').addEventListener('click', applyAllFilters);
+
+// Обработчики для полей ввода (цена и площадь)
+document.getElementById('minPrice').addEventListener('input', applyAllFilters);
+document.getElementById('maxPrice').addEventListener('input', applyAllFilters);
+document.getElementById('minArea').addEventListener('input', applyAllFilters);
+document.getElementById('maxArea').addEventListener('input', applyAllFilters);
+
+// Кнопка "Еще фильтры" (пока не функциональна)
+document.getElementById('btnMoreFilters').addEventListener('click', function() {
+  alert('Функция "Еще фильтры" в разработке');
+});
+
+// Инициализация фильтров после загрузки DOM
+document.addEventListener('DOMContentLoaded', function() {
+  setupRoomFilters();
+  setupTypeFilters();
+  setupViewMode();
+});
